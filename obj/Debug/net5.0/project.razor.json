@@ -15624,8 +15624,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/owner/Documents/Programación/Epicodus/Csharp/Wend-05-Oct/best_restaurants/Views/Restaurants/Create.cshtml",
+      "TargetPath": "Views\\Restaurants\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/owner/Documents/Programación/Epicodus/Csharp/Wend-05-Oct/best_restaurants/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/owner/Documents/Programación/Epicodus/Csharp/Wend-05-Oct/best_restaurants/Views/Restaurants/Delete.cshtml",
+      "TargetPath": "Views\\Restaurants\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15636,6 +15646,16 @@
     {
       "FilePath": "/Users/owner/Documents/Programación/Epicodus/Csharp/Wend-05-Oct/best_restaurants/Views/Restaurants/Index.cshtml",
       "TargetPath": "Views\\Restaurants\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/owner/Documents/Programación/Epicodus/Csharp/Wend-05-Oct/best_restaurants/Views/Restaurants/Details.cshtml",
+      "TargetPath": "Views\\Restaurants\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/owner/Documents/Programación/Epicodus/Csharp/Wend-05-Oct/best_restaurants/Views/Restaurants/Edit.cshtml",
+      "TargetPath": "Views\\Restaurants\\Edit.cshtml",
       "FileKind": "mvc"
     }
   ],
