@@ -42,8 +42,8 @@ namespace BestRestaurants.Controllers
 
     public ActionResult Edit(int id)
     {
-      var thisCuisine = _db.Cuisines.FirstOrDefault(Cuisine => Cuisine.CuisineId == id);
-      return View(this.Cuisine);
+      var thisCuisine = _db.Cuisines.FirstOrDefault(cuisine => cuisine.CuisineId == id);
+      return View(thisCuisine);
     }
 
     [HttpPost]
@@ -54,9 +54,9 @@ namespace BestRestaurants.Controllers
       return RedirectToAction("Index");
     }
 
-    public ActionResultDelete(int id)
+    public ActionResult Delete(int id)
     {
-      var thisCuisine = db.Cuisine.FirstOrDefault(cuisine => cuisine.CuisineId == id);
+      var thisCuisine = _db.Cuisines.FirstOrDefault(cuisine => cuisine.CuisineId == id);
       return View(thisCuisine);
     }
 

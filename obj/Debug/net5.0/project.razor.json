@@ -15617,6 +15617,27 @@
     "CSharpLanguageVersion": 900
   },
   "RootNamespace": "BestRestaurants",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "/Users/owner/Documents/Programación/Epicodus/Csharp/Wend-05-Oct/best_restaurants/Views/Shared/_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/owner/Documents/Programación/Epicodus/Csharp/Wend-05-Oct/best_restaurants/Views/Home/Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/owner/Documents/Programación/Epicodus/Csharp/Wend-05-Oct/best_restaurants/Views/Shared/Footer.cshtml",
+      "TargetPath": "Views\\Shared\\Footer.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/owner/Documents/Programación/Epicodus/Csharp/Wend-05-Oct/best_restaurants/Views/Restaurants/Index.cshtml",
+      "TargetPath": "Views\\Restaurants\\Index.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.2"
 }

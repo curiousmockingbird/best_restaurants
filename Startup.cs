@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspnetCore.Hosting;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -18,18 +18,18 @@ namespace BestRestaurants
       Configuration = builder.Build();
     }
     public IConfigurationRoot Configuration { get; set; }
-    public void ConfigurationServices(IServiceCollection service)
+    public void ConfigureServices(IServiceCollection services)
     {
       services.AddMvc();
 
-      service.AddEntityFrameworkMySql()
+      services.AddEntityFrameworkMySql()
         .AddDbContext<BestRestaurantsContext>(options => options
         .UseMySql(Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(Configuration["ConnectionStrings:DefaultConnection"])));
     }
     public void Configure(IApplicationBuilder app)
     {
       app.UseDeveloperExceptionPage();
-      app.useRouting();
+      app.UseRouting();
 
       app.UseEndpoints(routes =>
       {

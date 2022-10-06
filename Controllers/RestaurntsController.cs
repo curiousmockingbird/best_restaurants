@@ -18,20 +18,20 @@ namespace BestRestaurants.Controllers
 
     public ActionResult Index()
     {
-      List<Restaurant> model = _db.Restaurants.Include(restaurant => restaurant.TypeOfCuisine).ToList();
+      List<Restaurant> model = _db.Restaurants.Include(restaurant => restaurant.Cuisine).ToList();
       return View(model); 
     }
 
     public ActionResult Create()
     {
-      ViewBag.CuisineId = new SelectList(_db.TypeOfCuisine, "CuisineId", "TypeOfCuisine");
+      ViewBag.CuisineId = new SelectList(_db.Cuisines, "CuisineId", "Cuisine");
       return View();
     }
 
     [HttpPost]
     public ActionResult Create(Restaurant restaurant)
     {
-      _db.Restaurant.Add(restaurant);
+      _db.Restaurants.Add(restaurant);
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
@@ -45,7 +45,7 @@ namespace BestRestaurants.Controllers
     public ActionResult Edit(int id)
     {
       var thisRestaurant = _db.Restaurants.FirstOrDefault(restaurant => restaurant.RestaurantId == id);
-      ViewBag.CuisineId = new SelectList(_db.TypeOfCuisine, "CuisineId", "Name");
+      ViewBag.CuisineId = new SelectList(_db.Cuisines, "CuisineId", "Name");
       return View(thisRestaurant);
     }
 
